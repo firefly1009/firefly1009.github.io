@@ -15,10 +15,12 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="##准备工作1安装gitsudo apt-get install git 2安装nodejs(自带npm包管理工具)sudo apt-get install nodejs 3用npm安装hexosudo npm install  -g hexo 4安装hexo-deployer-git (用于git部署的插件)sudo npm install –save hexo-deployer-git   #">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/04/11/create_your_blog/config.png">
 <meta property="article:published_time" content="2020-04-11T07:54:34.000Z">
-<meta property="article:modified_time" content="2020-04-12T11:51:42.084Z">
+<meta property="article:modified_time" content="2020-04-12T11:57:56.655Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/11/create_your_blog/config.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -188,7 +190,9 @@
 <pre><code>检查全局的.gitconfig 文件
 检查blogs目录下的config文件
 有配置问题只能手动修改</code></pre><p>##对git配置的补充说明<br>之前看其他教程的时候并没有在这个问题上细说，导致了我第一次配置的时候遇到了许多坑<br>以下是我自己对blog目录下的git配置的一些实验</p>
-<p>首先，我们设置完全局的邮箱和用户名以后打开.depoly_git/.git目录下的config文件<br>它是这样的<br></p>
+<p>首先，我们设置完全局的邮箱和用户名以后打开.depoly_git/.git目录下的config文件<br>它是这样的<br><img src="/2020/04/11/create_your_blog/config.png" alt="hahah"><br>我们会发现，虽然已经配置了全局的邮箱，但是blogs下的git配置文件里并没有相应的数据<br>，此时sudo hexo d 也是会推送失败，提示没有缺省身份。</p>
+<p>##基本操作</p>
+
       
 
       
