@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>用hexo搭建自己的博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##firststep ##second step ##third step">
+  <meta name="description" content="##准备工作1安装gitsudo apt-get install git 2安装nodejs(自带npm包管理工具)sudo apt-get install nodejs 3用npm安装hexosudo npm install  -g hexo 4安装hexo-deployer-git (用于git部署的插件)sudo npm install –save hexo-deployer-git  ##">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用hexo搭建自己的博客">
 <meta property="og:url" content="http://yoursite.com/2020/04/11/%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##firststep ##second step ##third step">
+<meta property="og:description" content="##准备工作1安装gitsudo apt-get install git 2安装nodejs(自带npm包管理工具)sudo apt-get install nodejs 3用npm安装hexosudo npm install  -g hexo 4安装hexo-deployer-git (用于git部署的插件)sudo npm install –save hexo-deployer-git  ##">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-11T07:54:34.000Z">
-<meta property="article:modified_time" content="2020-04-11T08:31:09.393Z">
+<meta property="article:modified_time" content="2020-04-12T03:48:04.310Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -174,9 +174,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##firststep</p>
-<p>##second step</p>
-<p>##third step</p>
+        <p>##准备工作<br>1安装git<br>sudo apt-get install git</p>
+<p>2安装nodejs(自带npm包管理工具)<br>sudo apt-get install nodejs</p>
+<p>3用npm安装hexo<br>sudo npm install  -g hexo</p>
+<p>4安装hexo-deployer-git (用于git部署的插件)<br>sudo npm install –save hexo-deployer-git </p>
+<p>##配置<br>1配置git<br>git config –global user.email”邮箱地址”<br>git config –global user.name”用户名”</p>
+<p>2新建myblog目录，进入目录<br>sudo hexo init 将会克隆一个hexo博客模板到该目录下<br>此时，使用hexo server已经可以在本地运行博客系统了</p>
+<p>3在github创建一个仓库<br>仓库名必须是“用户名.github.io”<br>复制该地址（我用的是https，ssh地址用于公钥连接）<br>回到blogs目录<br>使用命令<br>git add remote origin “仓库的https地址”<br>这样就告诉了本地仓库一个远程仓库的地址，等下连接时可以通过用户名和密码认证</p>
+<p>4配置blogs目录下的_config.xxx文件（忘记后缀了）<br>sudo  nano _config.xxx<br>一直到文件最后的deploy 下<br>type:  git<br>repo: 仓库地址<br>branch: master（可以不写）</p>
+<p>5测试连接<br>sudo hexo deploy<br>如果推送成功，可以通过https：//用户名.github.io访问<br>如果失败，一定是git配置问题</p>
+<pre><code>检查全局的.gitconfig 文件
+检查blogs目录下的config文件
+有配置问题只能手动修改</code></pre><p>##基本操作</p>
 
       
 
