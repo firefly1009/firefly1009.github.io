@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://yoursite.com/2020/04/11/create_your_blog/config02.PNG">
 <meta property="og:image" content="http://yoursite.com/2020/04/11/create_your_blog/config03.PNG">
 <meta property="article:published_time" content="2020-04-11T07:54:34.000Z">
-<meta property="article:modified_time" content="2020-04-12T12:32:24.236Z">
+<meta property="article:modified_time" content="2020-04-12T12:36:50.227Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/2020/04/11/create_your_blog/config.PNG">
@@ -85,13 +85,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/firefly1009" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/36559393" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="/2240782402@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -126,13 +124,11 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/firefly1009" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/36559393" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="/2240782402@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -195,11 +191,12 @@
 <img src="/2020/04/11/create_your_blog/config.PNG" class title="This is an test image">
 <p>我们会发现，虽然已经配置了全局的邮箱，但是blogs下的git配置文件里并没有相应的数据<br>，此时sudo hexo d 也是会推送失败，提示没有缺省身份。</p>
 <hr>
-<p>所以我们只能打开文件手动添加邮箱和用户名<br>如图<img src="/2020/04/11/create_your_blog/config02.PNG" class title="手动添加邮箱"></p>
+<p>所以我们只能打开文件手动添加邮箱和用户名<br>如图</p>
+<img src="/2020/04/11/create_your_blog/config02.PNG" class title="手动添加邮箱">
 <hr>
 <p>添加完以后，再运行 sudo hexo d  我们会发现，推送可以正常进行了</p>
 <p>再回来看config文件里的信息</p>
-<img src="/2020/04/11/create_your_blog/config03.PNG" class width="03">
+<img src="/2020/04/11/create_your_blog/config03.PNG" class title="运行后">
 <p>这个时候，配置文件里出现了我们之前再_config.yml里配置的信息<br>所以可以简单理解就是，deploy程序运行时，先从_config.yml里面获取远程仓库地址信息，然后写到.deploy.git/.git/config文件里，在使用config文件里的信息去访问远程仓库</p>
 <hr>
 <p>##基本操作</p>
@@ -219,6 +216,16 @@
                   <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
                   <div class="reward-box">
                     
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/home/pi/myblogs/themes/yilia/source/img/alipay.PNG">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/home/pi/myblogs/themes/yilia/source/img/weixinpay.PNG">
+                      <span class="reward-type">微信</span>
+                    </div>
                     
                   </div>
                 </span>
@@ -294,20 +301,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2020/04/11/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hello World
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -326,6 +319,26 @@
 </aside>
 
 
+
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="create_your_blog" data-title="用hexo搭建自己的博客" data-url="http://yoursite.com/2020/04/11/create_your_blog/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
   
   
