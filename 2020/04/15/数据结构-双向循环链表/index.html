@@ -16,7 +16,7 @@
 <meta property="og:description" content="双向循环链表 概念：双向链表相较于普通的单链表，每个结点包含一个数据域和两个指针域（prior，next）分别指向前一个和后一个结点，而双向循环链表和普通双链表的的区别在于，双向循环链表的头结点的proir指针指向尾结点，尾结点的next指针指向头结点。 特殊：当双向循环链表只有一个头结点时：prior和next都指向头结点  即：PtrL-&gt;next &#x3D;PtrL      Ptrl-&amp;gt">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-15T12:42:43.000Z">
-<meta property="article:modified_time" content="2020-04-15T13:58:04.088Z">
+<meta property="article:modified_time" content="2020-04-16T11:14:20.045Z">
 <meta property="article:author" content="Patrick">
 <meta name="twitter:card" content="summary">
   
@@ -227,19 +227,19 @@ return PtrL;
 
  while(p-&gt;Next!=PtrL&amp;&amp;i&lt;k){   //只要不是空表，while变量，条件：下一个结点不是头结点（循环），还没有遍历到第k个
  p=p-&gt;Next;
- i++;//</code></pre><p> }<br>      if(i==k){<br>      //cout&lt;&lt;”correct”;<br>      return p;<br>  }<br>      else{<br>      cout&lt;&lt;”nothing to find”;<br>      return NULL;//没找到<br>  }</p>
+ i++;//</code></pre><p> }<br>       if(i==k){<br>       //cout&lt;&lt;”correct”;<br>       return p;<br>  }<br>       else{<br>       cout&lt;&lt;”nothing to find”;<br>       return NULL;//没找到<br>  }</p>
 <hr>
 <p>}<br>      5查找带有指定数值的结点并返回<br>      List Find(Item item,List PtrL){<br>      if(PtrL==NULL){return NULL;}<br>      List p=PtrL;<br>      while(p-&gt;Next!=NULL&amp;&amp;p-&gt;item!=item) {<br>       p=p-&gt;Next;//后移一位<br>   }<br>      if(p-&gt;item==item){<br>       return p;<br>   }<br>      else{<br>       return NULL;<br>   }<br>  }</p>
 <hr>
-<pre><code> 6在位置K上插入一个新结点（需要获取前一个结点的地址）
- List insert(Position k,Item item,List PtrL){
- if(PtrL==NULL){
+<pre><code>  6在位置K上插入一个新结点（需要获取前一个结点的地址）
+  List insert(Position k,Item item,List PtrL){
+  if(PtrL==NULL){
     List s=(List)malloc(sizeof(struct LNode));
     s-&gt;Prior=s;
     s-&gt;Next=s;
     s-&gt;item=item;
 }
- else{
+    else{
     if(k==1){
         List s=(List)malloc(sizeof(struct LNode));
         s-&gt;item=item;
@@ -262,16 +262,16 @@ return PtrL;
         p-&gt;Next=s;
         return PtrL;//返回插入成功后的头结点
     }
-}</code></pre><h2 id="-1"><a href="#-1" class="headerlink" title="  }"></a>  }</h2><pre><code> 7//在表尾插入结点
- List insertDefault(Item item,List PtrL){
- if(PtrL==NULL){
+}</code></pre><h2 id="-1"><a href="#-1" class="headerlink" title="  }"></a>  }</h2><pre><code>  7//在表尾插入结点
+  List insertDefault(Item item,List PtrL){
+  if(PtrL==NULL){
     List s=(List)malloc(sizeof(struct LNode));
     s-&gt;item=item;
     s-&gt;Next=s;
     s-&gt;Prior=s;
     return s;
 }
- else if(PtrL-&gt;Next==PtrL||PtrL-&gt;Prior==PtrL){
+  else if(PtrL-&gt;Next==PtrL||PtrL-&gt;Prior==PtrL){
     List s=(List)malloc(sizeof(struct LNode));
     s-&gt;item=item;
     s-&gt;Prior=PtrL;//s前继结点指向原来的尾节点
@@ -280,7 +280,7 @@ return PtrL;
     PtrL-&gt;Prior=s;
     return PtrL;
 }
- else {
+  else {
     List s=(List)malloc(sizeof(struct LNode));
     s-&gt;item=item;
     s-&gt;Prior=PtrL-&gt;Prior;//s前继结点指向原来的尾节点
@@ -289,13 +289,13 @@ return PtrL;
     PtrL-&gt;Prior=s;
 
     return PtrL;
-}</code></pre><h2 id="-2"><a href="#-2" class="headerlink" title="  }"></a>  }</h2><pre><code>   8在指定位置删除结点
-   List Delete(Position k,List PtrL){
-   if(PtrL==NULL){
+}</code></pre><h2 id="-2"><a href="#-2" class="headerlink" title="  }"></a>  }</h2><pre><code>    8在指定位置删除结点
+    List Delete(Position k,List PtrL){
+    if(PtrL==NULL){
 
     return PtrL;//空表没必要删除结点
 }
-   else{
+    else{
     List p=FindKth(k-1,PtrL);
     if(p==NULL){
         return NULL;//k位置不存在
@@ -307,18 +307,18 @@ return PtrL;
         free(s);
         return PtrL;
     }
-}</code></pre><h2 id="-3"><a href="#-3" class="headerlink" title="  }"></a>  }</h2><pre><code>   9打印链表
-   void print(List PtrL){
-   if(PtrL==NULL){
-   cout&lt;&lt;&quot;空&quot;;
-   return;
+}</code></pre><h2 id="-3"><a href="#-3" class="headerlink" title="  }"></a>  }</h2><pre><code>    9打印链表
+    void print(List PtrL){
+    if(PtrL==NULL){
+    cout&lt;&lt;&quot;空&quot;;
+    return;
 }
-   else
+    else
 {
-   List p=PtrL;
-   cout&lt;&lt;p-&gt;item&lt;&lt;endl;
-   p=p-&gt;Next;
-   while(p!=PtrL){
+    List p=PtrL;
+    cout&lt;&lt;p-&gt;item&lt;&lt;endl;
+    p=p-&gt;Next;
+    while(p!=PtrL){
      cout&lt;&lt;p-&gt;item&lt;&lt;endl;
      p=p-&gt;Next;
  }</code></pre><p>   }</p>
