@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Patrick&#39;s blogs</title>
+  <title>git版本回退 | Patrick&#39;s blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="学习记录">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Patrick&#39;s blogs">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="初用git，有的时候操作不当，新创建的分支覆盖了原来的分支，导致文件被删除这个时候就需要git的版本回溯功能  第一步： 查看历史版本 git reflog 第二步： 回退到想要回退的版本       git reset –hard 版本号  完成！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git版本回退">
+<meta property="og:url" content="http://yoursite.com/2020/04/20/git%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/index.html">
 <meta property="og:site_name" content="Patrick&#39;s blogs">
-<meta property="og:description" content="学习记录">
+<meta property="og:description" content="初用git，有的时候操作不当，新创建的分支覆盖了原来的分支，导致文件被删除这个时候就需要git的版本回溯功能  第一步： 查看历史版本 git reflog 第二步： 回退到想要回退的版本       git reset –hard 版本号  完成！">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-04-20T03:42:28.000Z">
+<meta property="article:modified_time" content="2020-04-20T03:49:52.841Z">
 <meta property="article:author" content="Patrick">
 <meta name="twitter:card" content="summary">
   
@@ -144,16 +146,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-git版本回退" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-git版本回退" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/20/git%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/">git版本回退</a>
+    <h1 class="article-title" itemprop="name">
+      git版本回退
     </h1>
   
 
@@ -174,6 +174,37 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixinpay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -181,16 +212,75 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/20/git%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/04/20/git%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%8F%8C%E5%90%91%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">数据结构-双向循环链表</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -210,315 +300,34 @@
 
 
 
+  
+  <div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="git版本回退" data-title="git版本回退" data-url="http://yoursite.com/2020/04/20/git%E7%89%88%E6%9C%AC%E5%9B%9E%E9%80%80/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
   
-    <article id="post-数据结构-双向循环链表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%8F%8C%E5%90%91%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8/">数据结构-双向循环链表</a>
-    </h1>
   
 
-        
-        <a href="/2020/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%8F%8C%E5%90%91%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8/" class="archive-article-date">
-  	<time datetime="2020-04-15T12:42:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-15</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>双向循环链表</p>
-<pre><code>概念：双向链表相较于普通的单链表，每个结点包含一个数据域和两个指针域（prior，next）</code></pre><p>分别指向前一个和后一个结点，而双向循环链表和普通双链表的的区别在于，双向循环链表的头结点的proir指针指向尾结点，尾结点的next指针指向头结点。</p>
-<pre><code>特殊：当双向循环链表只有一个头结点时：prior和next都指向头结点
- 即：PtrL-&gt;next =PtrL
-     Ptrl-&gt;prior=PtrL</code></pre><hr>
-<pre><code> 图解：
-1双链表
-{%asset_img  双链表.PNG  双链表图解%}
-
-
-2双向循环链表
-{%asset_img 双向循环链表.PNG 双向循环链表图解%}
-
-
-
- 代码实现：双向链表和双向循环链表差别不大，这里只放双向循环链表的代码
-
- 1结点定义
-typedef struct LNode * List 
-   Struct LNode{
-    Item item //数据域    
- List prior;指向上一个结点
-     List next; 指向下一个结点
-  }  
----
- 2 创建链表函数
-  List makeEmpty(){
-List Ptrl=(List)malloc(sizeof(struct LNode));
-    PtrL-&gt;next=PtrL;
-    PtrL-&gt;prior=PtrL;
-return PtrL;
-}
----
- 3计算链表长度
-   int getLength(List PtrL){
-   int i=0;
-   if(PtrL==NULL)
-   return i;
-   List p=PtrL;
-    if(p-&gt;Next=p)
-    {
-     return i+1;
-    }
-     else{
-   while(p-&gt;Next!=PtrL){
-       i++;
-       p=p-&gt;Next;
-   }
-   return i+1;</code></pre><p>   }</p>
-<h2 id><a href="#" class="headerlink" title="}"></a>}</h2><pre><code>4查找并返回第k个结点 
- List FindKth(Position k,List PtrL){
- if(PtrL==NULL){
- cout&lt;&lt;&quot;空表返回NULL&quot;;
- return NULL;
-}//空表返回NULL
-
- List p=PtrL;
- int i=1;
-
-  while(p-&gt;Next!=PtrL&amp;&amp;i&lt;k){   //只要不是空表，while变量，条件：下一个结点不是头结点（循环），还没有遍历到第k个
-  p=p-&gt;Next;
-  i++;//</code></pre><p>   }<br>        if(i==k){<br>        //cout&lt;&lt;”correct”;<br>        return p;<br>   }<br>        else{<br>        cout&lt;&lt;”nothing to find”;<br>        return NULL;//没找到<br>   }</p>
-<hr>
-<p>}<br>       5查找带有指定数值的结点并返回<br>       List Find(Item item,List PtrL){<br>       if(PtrL==NULL){return NULL;}<br>       List p=PtrL;<br>       while(p-&gt;Next!=NULL&amp;&amp;p-&gt;item!=item) {<br>       p=p-&gt;Next;//后移一位<br>   }<br>       if(p-&gt;item==item){<br>       return p;<br>   }<br>       else{<br>       return NULL;<br>   }<br>  }</p>
-<hr>
-<pre><code>  6在位置K上插入一个新结点（需要获取前一个结点的地址）
-  List insert(Position k,Item item,List PtrL){
-  if(PtrL==NULL){
-    List s=(List)malloc(sizeof(struct LNode));
-    s-&gt;Prior=s;
-    s-&gt;Next=s;
-    s-&gt;item=item;
-}
-    else{
-    if(k==1){
-        List s=(List)malloc(sizeof(struct LNode));
-        s-&gt;item=item;
-        s-&gt;Prior=PtrL-&gt;Prior;//s的前继指向尾结点
-        s-&gt;Next=PtrL;//s的next指向ptrl
-        PtrL-&gt;Prior-&gt;Next=s;//尾结点指向s
-        PtrL-&gt;Prior=s;//PtrL的前继指向s
-
-        return s;
-    }
-    List p=FindKth(k-1,PtrL);
-    if(p==NULL){
-        return NULL;//k的位置超限了
-    }
-    else{
-        List s=(List)malloc(sizeof(struct LNode));
-        s-&gt;Prior=p;
-        s-&gt;Next=p-&gt;Next;
-        p-&gt;Next-&gt;Prior=s;
-        p-&gt;Next=s;
-        return PtrL;//返回插入成功后的头结点
-    }
-}</code></pre><h2 id="-1"><a href="#-1" class="headerlink" title="  }"></a>  }</h2><pre><code>  7//在表尾插入结点
-  List insertDefault(Item item,List PtrL){
-  if(PtrL==NULL){
-    List s=(List)malloc(sizeof(struct LNode));
-    s-&gt;item=item;
-    s-&gt;Next=s;
-    s-&gt;Prior=s;
-    return s;
-}
-  else if(PtrL-&gt;Next==PtrL||PtrL-&gt;Prior==PtrL){
-    List s=(List)malloc(sizeof(struct LNode));
-    s-&gt;item=item;
-    s-&gt;Prior=PtrL;//s前继结点指向原来的尾节点
-    s-&gt;Next=PtrL;//s的后继元素指向头结点
-    PtrL-&gt;Next=s;
-    PtrL-&gt;Prior=s;
-    return PtrL;
-}
-  else {
-    List s=(List)malloc(sizeof(struct LNode));
-    s-&gt;item=item;
-    s-&gt;Prior=PtrL-&gt;Prior;//s前继结点指向原来的尾节点
-    s-&gt;Next=PtrL;//s的后继元素指向头结点
-    PtrL-&gt;Prior-&gt;Next=s;//原来的尾节点指向新的尾结点          
-    PtrL-&gt;Prior=s;
-
-    return PtrL;
-}</code></pre><h2 id="-2"><a href="#-2" class="headerlink" title="  }"></a>  }</h2><pre><code>    8在指定位置删除结点
-    List Delete(Position k,List PtrL){
-    if(PtrL==NULL){
-
-    return PtrL;//空表没必要删除结点
-}
-    else{
-    List p=FindKth(k-1,PtrL);
-    if(p==NULL){
-        return NULL;//k位置不存在
-    }
-    else{
-        List s=p-&gt;Next;
-        s-&gt;Next-&gt;Prior=p;
-        p-&gt;Next=s-&gt;Next;
-        free(s);
-        return PtrL;
-    }
-}</code></pre><h2 id="-3"><a href="#-3" class="headerlink" title="  }"></a>  }</h2><pre><code>    9打印链表
-    void print(List PtrL){
-    if(PtrL==NULL){
-    cout&lt;&lt;&quot;空&quot;;
-    return;
-}
-    else
-{
-    List p=PtrL;
-    cout&lt;&lt;p-&gt;item&lt;&lt;endl;
-    p=p-&gt;Next;
-    while(p!=PtrL){
-     cout&lt;&lt;p-&gt;item&lt;&lt;endl;
-     p=p-&gt;Next;
- }</code></pre><p>   }</p>
-<p> }</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/15/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84-%E5%8F%8C%E5%90%91%E5%BE%AA%E7%8E%AF%E9%93%BE%E8%A1%A8/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-create_your_blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/04/11/create_your_blog/">用hexo搭建自己的博客</a>
-    </h1>
   
 
-        
-        <a href="/2020/04/11/create_your_blog/" class="archive-article-date">
-  	<time datetime="2020-04-11T07:54:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##准备工作<br>1安装git<br>    sudo apt-get install git</p>
-<p>2安装nodejs(自带npm包管理工具)<br>    sudo apt-get install nodejs</p>
-<p>3用npm安装hexo<br>    sudo npm install  -g hexo</p>
-<p>4安装hexo-deployer-git (用于git部署的插件)<br>    sudo npm install –save hexo-deployer-git </p>
-<hr>
-<p>##配置<br>1配置git<br>    git config –global user.email”邮箱地址”<br>    git config –global user.name”用户名”</p>
-<p>2新建myblog目录，进入目录<br>    sudo hexo init 将会克隆一个hexo博客模板到该目录下<br>此时，使用hexo server已经可以在本地运行博客系统了</p>
-<p>3在github创建一个仓库<br>仓库名必须是“用户名.github.io”<br>复制该地址（我用的是https，ssh地址用于公钥连接）<br>回到blogs目录<br>使用命令<br>git add remote origin “仓库的https地址”<br>这样就告诉了本地仓库一个远程仓库的地址，等下连接时可以通过用户名和密码认证</p>
-<p>4配置blogs目录下的_config.xxx文件（忘记后缀了）<br>sudo  nano _config.xxx<br>一直到文件最后的deploy 下<br>    type:  git<br>    repo: 仓库地址<br>    branch: master（可以不写）</p>
-<p>5测试连接<br>       sudo hexo deploy<br>如果推送成功，可以通过https：//用户名.github.io访问<br>如果失败，一定是git配置问题</p>
-<pre><code>检查全局的.gitconfig 文件
-检查blogs目录下的config文件
-有配置问题只能手动修改</code></pre><p>##对git配置的补充说明<br>之前看其他教程的时候并没有在这个问题上细说，导致了我第一次配置的时候遇到了许多坑<br>以下是我自己对blog目录下的git配置的一些实验</p>
-<p>首先，我们设置完全局的邮箱和用户名以后打开.depoly_git/.git目录下的config文件<br>它是这样的</p>
-<img src="/2020/04/11/create_your_blog/config.PNG" class title="This is an test image">
-<p>我们会发现，虽然已经配置了全局的邮箱，但是blogs下的git配置文件里并没有相应的数据<br>，此时sudo hexo d 也是会推送失败，提示没有缺省身份。</p>
-<hr>
-<p>所以我们只能打开文件手动添加邮箱和用户名<br>如图</p>
-<img src="/2020/04/11/create_your_blog/config02.PNG" class title="手动添加邮箱">
-<hr>
-<p>添加完以后，再运行 sudo hexo d  我们会发现，推送可以正常进行了</p>
-<p>再回来看config文件里的信息</p>
-<img src="/2020/04/11/create_your_blog/config03.PNG" class title="运行后">
-<p>这个时候，配置文件里出现了我们之前再_config.yml里配置的信息<br>所以可以简单理解就是，deploy程序运行时，先从_config.yml里面获取远程仓库地址信息，然后写到.deploy.git/.git/config文件里，在使用config文件里的信息去访问远程仓库</p>
-<hr>
-<p>##基本操作<br>hexo clean<br>hexo generate<br>hexo new “博客名”<br>hexo deploy 部署到远程仓库</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/04/11/create_your_blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -541,8 +350,8 @@ return PtrL;
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
