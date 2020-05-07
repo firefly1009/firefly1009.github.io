@@ -169,7 +169,7 @@
         <p> 初用git，有的时候操作不当，新创建的分支覆盖了原来的分支，导致文件被删除<br>这个时候就需要git的版本回溯功能</p>
 <p> 第一步： 查看历史版本</p>
 <pre><code>git reflog</code></pre><p> 第二步： 回退到想要回退的版本<br>         git reset –hard 版本号</p>
-<p> 完成！</p>
+<p>  完</p>
 
       
 
@@ -477,6 +477,12 @@ return PtrL;
 <p>这个时候，配置文件里出现了我们之前再_config.yml里配置的信息<br>所以可以简单理解就是，deploy程序运行时，先从_config.yml里面获取远程仓库地址信息，然后写到.deploy.git/.git/config文件里，在使用config文件里的信息去访问远程仓库</p>
 <hr>
 <p>##基本操作<br>hexo clean<br>hexo generate<br>hexo new “博客名”<br>hexo deploy 部署到远程仓库</p>
+<p>##hexo添加图片</p>
+<p>首先安装插件<br>npm install <a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">https://github.com/7ym0n/hexo-asset-image</a> –save<br>安装好插件后，你每次hexo n 一个新的博客都会在同一个目录下生成一个和博客名相同的文件夹，用来存放你在文章中要引用的图片<br>引用图片的格式：</p>
+
+
+
+
 
       
 
